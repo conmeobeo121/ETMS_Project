@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETMS_Website", "ETMS_Website\ETMS_Website.csproj", "{E2B98DD8-04CA-4D8E-AADC-7883F33D0D0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETMS_DatabaseHandle", "ETMS_DatabaseHandle\ETMS_DatabaseHandle.csproj", "{FF8932D1-D510-4B84-A165-49805D5D4421}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2B98DD8-04CA-4D8E-AADC-7883F33D0D0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2B98DD8-04CA-4D8E-AADC-7883F33D0D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2B98DD8-04CA-4D8E-AADC-7883F33D0D0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2B98DD8-04CA-4D8E-AADC-7883F33D0D0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8932D1-D510-4B84-A165-49805D5D4421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8932D1-D510-4B84-A165-49805D5D4421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8932D1-D510-4B84-A165-49805D5D4421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8932D1-D510-4B84-A165-49805D5D4421}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB678988-7B3D-4205-8F7D-67D5CBD4263F}
+	EndGlobalSection
+EndGlobal

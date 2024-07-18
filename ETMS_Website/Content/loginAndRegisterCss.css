@@ -1,0 +1,37 @@
+﻿.login-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.custom-background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../Images/background_image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.p-6 {
+    padding: 5rem !important;
+}
+
+.form-container {
+    max-height: 800px;
+    /* Cố định chiều cao */
+    overflow-y: auto;
+    /* Cho phép cuộn dọc nếu nội dung vượt quá chiều cao */
+}
+
+input,
+select,
+textarea {
+    max-width: 10000px !important;
+}

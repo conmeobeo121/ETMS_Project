@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SiteAdmin.master.cs" Inherits="ETMS_Website.Admin.SiteAdmin" %>
+
+<%@ Register Src="~/Admin/NavbarAdmin.ascx" TagName="NavbarAdmin" TagPrefix="uc" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <link href="<%= ResolveUrl("~/Content/AdminCSS.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%= ResolveUrl("~/Content/customCSS.css") %>" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="<%= ResolveUrl("~/Scripts/custom.js") %>"></script>
+    <asp:ContentPlaceHolder runat="server" ID="SiteAdminHeadPlaceHolder"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
+    <div class="row">
+        <uc:NavbarAdmin runat="server" ID="NavbarForAdmin"></uc:NavbarAdmin>
+        <div class="col-md-10 ml-sm-auto col-lg-10 px-4 overflow-y-scroll mh-100-vh">
+            <asp:ContentPlaceHolder runat="server" ID="SiteAdminContentPlaceHolder"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>
