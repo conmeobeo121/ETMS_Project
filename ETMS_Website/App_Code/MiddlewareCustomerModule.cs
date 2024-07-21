@@ -46,6 +46,12 @@ namespace ETMS_Website.App_Code
                 context.ApplicationInstance.CompleteRequest();
                 return;
             }
+            if (context.User.IsInRole("Admin"))
+            {
+                context.Response.Redirect("~/Admin", false);
+                context.ApplicationInstance.CompleteRequest();
+                return;
+            }
             if (!context.User.IsInRole("Customer"))
             {
                 HandleFunction.GoToErrorPage(context.Response, context, "You do not have permission to access this page.");
